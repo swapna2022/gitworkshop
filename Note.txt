@@ -16,3 +16,6 @@ Inorder to save the file to local respository
 step 1 --> Stage the file--> git add  . (To stage all the files) / git add  "<file name>" (to stage the specific file)
 step2  --> Commit the File--> git commit -m "<commit message>"
 
+TO MOVE THE CHANGES FROM LOCAL REPOSITORY TO REMOTE REPOSITORY
+git pull / git pull origin
+
