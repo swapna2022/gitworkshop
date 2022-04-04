@@ -1,2 +1,18 @@
 Hi This is Nandini
 Editing the File Note.txt
+
+Initilizing the git folder
+
+git init
+
+Getting the remote respositoty files to local repository
+
+git clone <clone url>
+
+Saving the file on folder --> We are saving the file to working directory
+
+Inorder to save the file to local respository
+
+step 1 --> Stage the file--> git add  . (To stage all the files) / git add  "<file name>" (to stage the specific file)
+step2  --> Commit the File--> git commit -m "<commit message>"
+
