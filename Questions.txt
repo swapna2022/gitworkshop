@@ -4,7 +4,7 @@ Explain the differences between overloading and overriding?
 Explain basic git commands?
 Explain the signifance of This , final, static, super keywords
 Explain Boundry value analysis
-Explain Scrum
+Explain Scrum meetings
 Throw and throws
 try and catch 
 
