@@ -1,0 +1,21 @@
+What is Thread?
+Explain Multithreading
+Explain the differences between overloading and overriding?
+Explain basic git commands?
+Explain the signifance of This , final, static, super keywords
+Explain Boundry value analysis
+Explain Scrum
+Throw and throws
+try and catch 
+
+Program : Reversing word
+Program: Reversing a string word by word
+Program: Reverse the string using a private method that accept one input argument
+Program: Count the frequency of words in the string
+// My note book is My friends note book 
+
+My=2
+note=2
+book=2
+is=1
+friends=1
