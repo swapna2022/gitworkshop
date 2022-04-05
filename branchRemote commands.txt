@@ -1,0 +1,11 @@
+Origin and Upstream
+
+Origin-> your fork, your own repo on the github
+git remote add origin <url>
+
+Upstream --> original repo that you hvae forked
+git remote add upstream <url>
+
+to remove origin
+
+git remote rm origin
