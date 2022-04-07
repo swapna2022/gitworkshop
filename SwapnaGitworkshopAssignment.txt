@@ -1,0 +1,150 @@
+What is Thread?
+Thread concept is introduced to achieve running more than one task in parallel.
+A Thread is a very light-weighted process, or the smallest part of the process that allows a program to operate more efficiently by running multiple tasks simultaneously.
+Another benefit of using thread is that if a thread gets an exception or an error at the time of its execution, it doesn't affect the execution of the other threads. All the threads share a common memory and have their own stack, local variables and program counter. When multiple threads are executed in parallel at the same time, this process is known as Multithreading.
+
+Thread Model
+A thread exists in several states. 
+1) New (Ready to run)
+A thread is in New when it gets CPU time.
+
+2) Running
+A thread is in a Running state when it is under execution.
+
+3) Suspended
+A thread is in the Suspended state when it is temporarily inactive or under execution.
+
+4) Blocked
+A thread is in the Blocked state when it is waiting for resources.
+
+5) Terminated
+A thread comes in this state when at any given time, it halts its execution immediately.
+
+Creating Thread
+A thread is created either by "creating or implementing" the Runnable Interface or by extending the Thread class.
+
+Q)What is Multi threading?
+Multithreading in Java is a process of executing multiple threads simultaneously.Each thread runs parallel to each other. Mulitple threads don’t allocate separate memory area, hence they save memory. Also, context switching between threads takes less time.
+Advantages of Java Multithreading
+1) It doesn't block the user because threads are independent and we can perform multiple operations at the same time.
+2) Threads are independent, so it doesn't affect other threads if an exception occurs in a single thread.
+
+Q)Difference between Overloading and OverRiding?
+Method overloading is the example of compile time polymorphism. Where as Method overriding is the example of run time polymorphism.
+Method overloading is used to increase the readability of the program. Method overriding is used to provide the specific implementation of the method that is already provided by its super class.
+Method overloading is performed within class. Method overriding occurs in two classes which are in Inheritace.
+In case of method overloading, parameter must be different.	In case of method overriding, parameter must be same.
+In java, method overloading can't be performed by changing return type of the method only. Return type can be same or different in method overloading. But we must have to change the parameter.	Return type must be same method overriding.
+
+Q)Explain Basic Git commands?
+Few Basic commands of Git are:
+git config : This command sets the author name and email address respectively to be used with your commits.
+
+git clone : Retrieve an entire repository from a global repository via URL.To create a local working copy of an existing remote repository, use git clone to copy and download the repository to a computer.
+
+git add [file] : will add the file to working direcory.
+Before a file is available to commit to a repository, the file needs to be added to the Git index (staging area). 
+
+git commit -m “[descriptive message]" : This command records or snapshots the file permanently in the version history.Record the changes made to the files to a local repository. For easy reference, each commit has a unique ID. It’s best practice to include a message with each commit explaining the changes made in a commit. Adding a commit message helps to find a particular change or understanding the changes.
+
+git push origin : Will push the file to global repository
+
+git pull origin : This pulls the changes from the remote repository to the local computer.
+
+git stash : Will move our modified file to temporary place in case of merge conflict.Then we need to pull updated file from global repository then we can commit our code.
+
+git stash pop : This command restores the most recently stashed files.
+
+git status :List the files we've changed and those we still need to add or commit:
+
+git checkout -b <branchname> :Create a new branch and switch to it.
+
+git checkout <branchname> : Switch from one branch to another.
+
+
+Q)Explain the signifance of This , final, static, super keywords?
+
+This:
+In Java, this is a reference variable that refers to the current object.
+Uses of This key word
+this can be used to refer current class instance variable.
+this can be used to invoke current class method (implicitly)
+this() can be used to invoke current class constructor.
+this can be passed as an argument in the method call.
+this can be passed as argument in the constructor call.
+this can be used to return the current class instance from the method.
+The most common use of the this keyword is to eliminate the confusion between class attributes and parameters with the same name.
+
+Final:
+The final keyword is a non-access modifier used for classes, attributes and methods, which makes them non-changeable (impossible to inherit or override).
+ If we initialize a variable with the final keyword, then we cannot modify its value.
+If we declare a method as final, then it cannot be overridden by any subclasses. And, if we declare a class as final, we restrict the other classes to inherit or extend it.
+All math constants are final and String, Wrapper classes are Final.
+We canont declare constructors as final since they are never inherited.
+
+Static:
+The static keyword in Java is used for memory management mainly. We can apply static keyword with variables, methods, blocks and nested classes. The static keyword belongs to the class than an instance of the class.
+The static variable can be used to refer to the common property of all objects.The static variable gets memory only once in the class area at the time of class loading.
+If you apply static keyword with any method, it is known as static method.
+
+A static method belongs to the class rather than the object of a class.
+A static method can be invoked without the need for creating an instance of a class.
+A static method can access static data member and can change the value of it.
+Java static block :
+Is used to initialize the static data member.
+It is executed before the main method at the time of classloading.
+
+Super:
+The super keyword in Java is a reference variable which is used to refer immediate parent class object.
+super can be used to refer immediate parent class instance variable.
+super can be used to invoke immediate parent class method.
+super() can be used to invoke immediate parent class constructor.
+
+Q)Explain Boundary value analysis?
+Boundary value testing is focused on the values at boundaries. This technique determines whether a certain range of values are acceptable by the system or not. It is very useful in reducing the number of test cases. It is most suitable for the systems where an input is within certain ranges.
+So these extreme ends like Start- End, Lower- Upper, Maximum-Minimum, Just Inside-Just Outside values are called boundary values and the testing is called “boundary testing”.
+The basic idea in normal boundary value testing is to select input variable values at their:
+Minimum
+Just above the minimum
+A nominal value
+Just below the maximum
+Maximum
+Q)Explain Scrum meetings?
+1.Sprint grroming:
+During a sprint grooming or sprint planning session, the product team reviews the backlog items and decides on the number of items to be developed during the next sprint, based on team capacity.
+2. Sprint planning meeting
+ The sprint planning session is when the Scrum team discusses what work they want to tackle in the next sprint and then prioritizes that work accordingly. It is held at the beginning of a new sprint, with the purpose of setting up prioritized worklist.The Product Owner will discuss a prioritized backlog with the development team, and the whole group collectively comes up with the amount of effort involved. The team then decides how much of the work from the backlog can be completed in this iteration. 
+The team members estimates the story points.
+Development team, Scrum master, Product owner are part of this meeting.
+3. Daily standup meeting
+The Daily standup meeting happens every day of the sprint. It’s a quick check-in on what each team member is working on, how the process is going for them, and what stands in their way. This agile ceremony held for the Development Team facilitated by the Scrum Master.
+Each team member is being required to answer 3 questions:
+What did I do yesterday?
+What will I do today?
+Are there any impediments to continue working?
+The daily stand-up should be considered an informal meeting and should be no longer than 15 minutes. 
+Scrum master and Development team are part of this.
+4. Sprint review meeting
+An agile ceremony held by Development Team, Scrum Master and Product Owner, where the stakeholders may be invited as well. The purpose of the Iteration Review is to show the work that the team has achieved in the last sprint.
+During the sprint review, the development team presents the work that was done during the sprint (often with a demonstration), with the aim of collecting as much feedback as possible. 
+5. Sprint retrospective meeting
+During a sprint retrospective, the Scrum team focuses specifically on their work together — and not necessarily the product or output. What went well? What didn’t go well? What should they do differently in the next sprint? Each sprint retrospective should conclude with action items the team will implement to improve their collaboration
+Development team, Scrum master are part of this.
+
+Q)Difference between Throw and Throws 
+Throw is a keyword which is used to throw an exception explicitly in the program inside a function or inside a block of code. where as Throws is a keyword used in the method signature used to declare an exception which might get thrown by the function while executing the code.
+Internally throw is implemented as it is allowed to throw only single exception at a time i.e we cannot throw multiple exception with throw keyword.	On other hand we can declare multiple exceptions with throws keyword. 
+With throw keyword we can propagate only unchecked exception i.e checked exception cannot be propagated using throw.	On other hand with throws keyword both checked and unchecked exceptions can be declared and for the propagation checked exception must use throws keyword followed by specific exception class name.
+
+Q)Try and catch
+Java try block
+Java try block is used to enclose the code that might throw an exception. It must be used within the method.
+If an exception occurs at the particular statement in the try block, the rest of the block code will not execute. So, it is recommended not to keep the code in try block that will not throw an exception.
+Java try block must be followed by either catch or finally block.
+
+Java catch block
+Java catch block is used to handle the Exception by declaring the type of exception within the parameter. The declared exception must be the parent class exception ( i.e., Exception) or the generated exception type. However, the good approach is to declare the generated type of exception.
+The catch block must be used after the try block only. We can use multiple catch block with a single try block.
+A try block can be followed by one or more catch blocks. Each catch block must contain a different exception handler.
+At a time only one exception occurs and at a time only one catch block is executed.
+All catch blocks must be ordered from most specific to most general, i.e. catch for ArithmeticException must come before catch for Exception.
